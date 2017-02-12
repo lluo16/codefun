@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+      <dl>
+        <dt>Prompt:
+        <dd><textarea type=text rows=5 cols=40 name=title></textarea>
+        <dt>Answer:
+        <dd><textarea type=text rows=5 cols=40 name=text></textarea>
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+    {% endif %}
+  <ul class=entries>
+   {%if entries %}
+    <li><h2>{{ entries.title }}</h2>
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endif %}
+
+
+  </ul>
+
+
+
+
+
+  <form action="{{ url_for('check') }}" method=post class=check>
+
+
+
+  <dt>Write your answer here: 
+  <dd><textarea type=text cols=60 rows=15 name=Answer></textarea>
+  
+
+  
+  <button onclick="checkAnswer()">Submit</button>
+
+{% endblock %}
