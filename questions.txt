@@ -1,0 +1,38 @@
+#1 
+
+Question of the Day (Feb. 11, 2017)
+
+Help Taylor Swift feed her 5 cats! 
+Fill in the header of the loop:
+
+for x in _____(_):
+  feed cat x
+
+Answer:
+for x in range(5):
+  feed cat x
+
+#2
+
+Question of the Day (Feb. 12, 2017)
+
+Lucy is baking chocolate chip cookies and needs to go shop for ingredients.
+Place the following ingredients into a shopping list for her: flour, sugar, eggs, butter, chocolate chips
+
+shoppingList = 
+
+Answer:
+shoppingList = ["flour", "sugar", "eggs", "butter", "chocolate chips"]
+
+#3
+
+Question of the Day (Feb 13, 2017)
+
+Hope Solo is in the goal for a penalty shoot out and she needs someone to add up her opponent's score.
+
+if goal: 
+	score __ 1
+
+Answer: 
+if goal: 
+	score += 1
